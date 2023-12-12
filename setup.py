@@ -75,7 +75,7 @@ class CMakeBuild(build_ext):
         )
 
 
-with open("xx_hamiltonian_solver/_version.py") as f:
+with open("hardness_spin_dynamics/_version.py") as f:
     version = f.readlines()[-1].split()[-1].strip("\"'")
 
 requirements = [
@@ -95,11 +95,11 @@ info = {
     "description": "C++ helper tool for efficient generation of Floquet unitary",
     "long_description": open("README.rst").read(),
     "long_description_content_type": "text/x-rst",
-    "provides": ["xx_hamiltonian_solver"],
+    "provides": ["hardness_spin_dynamics"],
     "install_requires": requirements,
-    "ext_modules": [CMakeExtension("xx_hamiltonian_solver")],
+    "ext_modules": [CMakeExtension("hardness_spin_dynamics")],
     "cmdclass": {"build_ext": CMakeBuild},
-    "ext_package": "xx_hamiltonian_solver"
+    "ext_package": "hardness_spin_dynamics"
 }
 
 classifiers = [

@@ -3,7 +3,7 @@ import jax.random as jrnd
 import jax.numpy.linalg as LA
 from mpi4py import MPI
 import sys
-from spin_dynamics.spin_dynamics import create_basis_u1, create_hamiltonian_xx
+from hardness_spin_dynamics.xx_hamiltonian_solver import create_basis_u1, create_hamiltonian_xx
 import numpy as np
 
 comm = MPI.COMM_WORLD

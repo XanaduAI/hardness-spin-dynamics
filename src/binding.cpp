@@ -85,7 +85,7 @@ py::array_t<std::complex<double>> createHamiltonianXX(py::array_t<double> Js,
 }
 
 
-PYBIND11_MODULE(spin_dynamics, m) {
+PYBIND11_MODULE(xx_hamiltonian_solver, m) {
 	m.def("create_basis_u1", createBasisU1)
 	 .def("create_hamiltonian_xx", createHamiltonianXX);
 }
