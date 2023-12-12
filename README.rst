@@ -32,7 +32,8 @@ The XX model
 ------------
 
 For $n < 10$, where $n$ is the number of spins in each part of the bipartite graph, we fully diagonalized the Hamiltonian to obtain the time evolution of the output probability, $p(x;J;t)$. For this purpose, two relevant source files, ``src/xx_time_evol_exact.cpp`` and ``python_src/xx_time_evol_exact.py`` are used.
-The C++ code ``src/xx_time_evol_exact.cpp`` diagonalizes the constructed Hamiltonian using Eigen, whereas Python code ``python_src/xx_time_evol_exact.py`` utilizes JAX. Thus, the Python code can use GPUs for diagonalizing the Hamiltonian, which is significantly faster when GPUs are supported.
+The C++ code ``src/xx_time_evol_exact.cpp`` diagonalizes the constructed Hamiltonian using Eigen, whereas Python code ``python_src/xx_time_evol_exact.py`` utilizes JAX. Thus, our Python code is GPU enabled, which is significantly faster for larger $n$.
+
 
 For $n = 10$, we implemented the time evolution using the second-order Trotter decomposition in ``src/xx_time_evol_trotter.cpp``. Our code is based on `PennyLane-Lightning-Kokkos <https://github.com/PennyLaneAI/pennylane-lightning>`_. We ran our code using NVidia A100, compiled with the CUDA backend of Kokkos.
 
