@@ -3,7 +3,7 @@ The hardness of quantum spin dynamics
 
 
 This repository contains code to reproduce the anticoncentration results in the paper Park, Casares, Arrazola, and Huh: "The hardness of quantum spin dynamics."
-In the paper, we considered the XX and the Ising models. There are several relevant codes for each Hamiltonian.
+In the paper, we considered the XX and the Ising models. For each Hamiltonian, we used several C++ and Python codes.
 
 Build and Compile
 -----------------
