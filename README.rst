@@ -44,3 +44,4 @@ For computing the output probability at times multiples of log of $n$, ``src/xx_
 The Ising model
 ---------------
 
+For the Ising model, the dynamics can be simulated solely by the `IsingXX <https://docs.pennylane.ai/en/stable/code/api/pennylane.IsingXX.html?highlight=isingxx#pennylane.IsingXX>`_ gates. C++ source code ``src/ising_time_evol.cpp`` and ``src/ising_at_log_time.cpp`` are used for the time-evolution and for recording the output distribution at specific times, respectively.
