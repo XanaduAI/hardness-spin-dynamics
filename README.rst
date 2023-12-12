@@ -37,4 +37,9 @@ The C++ code ``src/xx_time_evol_exact.cpp`` diagonalizes the constructed Hamilto
 For $n = 10$, we implemented the time evolution using the second-order Trotter decomposition in ``src/xx_time_evol_trotter.cpp``. Our code is based on `PennyLane-Lightning-Kokkos <https://github.com/PennyLaneAI/pennylane-lightning>`_. We ran our code using NVidia A100, compiled with the CUDA backend of Kokkos.
 
 
-For computing the output probability at specific times ($t / \log n \in [0,1,2,3,4,5]$), ``src/xx_at_log_time_trotter.cpp`` is used.
+For computing the output probability at times multiples of log of $n$, ``src/xx_at_log_time_trotter.cpp`` is used.
+
+
+The Ising model
+---------------
+
