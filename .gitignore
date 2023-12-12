@@ -1,0 +1,6 @@
+build
+Build
+.cache
+XXHamiltonianSolver.egg-info/
+xx_hamiltonian_solver/*-x86_64-linux-gnu.so
+**/__pycache__/
