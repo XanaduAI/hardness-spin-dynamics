@@ -31,7 +31,7 @@ See also `Kokkos compile guide <https://kokkos.github.io/kokkos-core-wiki/Progra
 The XX model
 ------------
 
-For $n < 10$, where $n$ is the number of spins in each part of the bipartite graph, we fully diagonalized the Hamiltonian to obtain the time evolution of the output probability, $p(x;J;t)$. For this purpose, two relevant source files, ``src/xx_time_evol_exact.cpp`` and ``python_src/xx_time_evol_exact.py`` are used.
+For $n < 10$, where $n$ is the number of spins in each part of the bipartite graph, we fully diagonalize the Hamiltonian to obtain the time evolution of the output probability, $p(x;J;t)$. For this purpose, two relevant source files, ``src/xx_time_evol_exact.cpp`` and ``python_src/xx_time_evol_exact.py`` are used.
 The C++ code ``src/xx_time_evol_exact.cpp`` diagonalizes the constructed Hamiltonian using Eigen, whereas Python code ``python_src/xx_time_evol_exact.py`` utilizes JAX. Thus, our Python code is GPU enabled, which is significantly faster for larger $n$.
 
 
